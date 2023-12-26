@@ -1,0 +1,18 @@
+<table border="2">
+    <tr>
+        <i>TASKS</i>
+    </tr>
+    <tr>
+        <!-- <th>Id</th> -->
+        <th>Name</th>
+        <th>Task</th>
+    </tr>
+    <%result.forEach(function(user){%>
+        <tr>
+            <!-- <td><%= user.id%></td> -->
+            <td><%= user.name%></td>
+            <td><%= user.task%></td>
+        </tr>
+    <% })%>
+</table>
+

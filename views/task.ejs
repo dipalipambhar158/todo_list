@@ -1,0 +1,27 @@
+<form method="post">
+    <h1>Add Task</h1>
+    <table>
+        <tr>
+            <th>TODO LIST</th>
+        </tr>
+        <tr>
+            <td>NAME</td>
+            <td>
+                <select name="userid" required>
+                    <% result.forEach(function(user){%>
+                        <option value="<%= user.id%>" ><%= user.name%></option>
+                    <% }) %>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>TASK</td>
+            <td><input type="text" name="task" placeholder="Enter The Task" required></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><a href="view_task.ejs"><input type="submit" name="submit"></a></td>
+        </tr>
+    </table>
+</form>
